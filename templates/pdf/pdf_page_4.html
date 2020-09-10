@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <style>
+        .header div {
+            font-size: 9;
+            padding: 0;
+        }
+        .userdetails {
+            font-size: 9;
+            margin-top: 2%;
+            width: 49%;
+            float: left;
+        }
+        .rentaldetails {
+            font-size: 9;
+            width: 49%;
+            float: right;
+        }
+        .rentaldetails .cell {
+            width: 50%;
+            padding-bottom: 1%;
+        }
+        .rentaldetails .cellRight {
+            float: right;
+        }
+        .rentaldetails .cellLeft {
+            float: left;
+        }
+        .coloredCell {
+            background-color: #ebe7e6;
+        }
+        .insurance {
+            font-size: 9;
+            margin-top: 2%;
+            width: 100%;
+        }
+        .priceDetails {
+            font-size: 9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div style="float: left; width: 60%">
+            <div style="float: left;width: 20%;height: 5%;">
+                <img style="width: 60%; height: 60%;display: block;" src="RC170wide.png" />
+            </div>
+            <div style="float: right">
+                <div style="font-weight: bold;">Right Cars Dubrovnik Airport</div>
+                <div>NOVA GRATIA d.o.o./Nova Rent a Car</div>
+                <div>Company Number 60253689</div>
+                <div>Vat Number 66126775778</div>
+                <div>Telephone number +38520773988</div>
+            </div>
+        </div>
+        <div style="float: right;width: 35%;">
+            <div style="text-align: right; font-weight: bold;">Invoice Number</div>
+            <div style="text-align: right">2020/14240</div>
+            <div style="text-align: right">Rental agreement number {{registratioNumber}}</div>
+            <div style="text-align: right">Service staff by No 745</div>
+        </div>
+    </div>
+    <div class="disclaimer">
+        <div style="text-align: center">DAMAGE REPORT SHEET</div>
+        <img src="{{damageImageUrl1}}" style="width: 300px; height: 200px;" />
+        {{#damageImageUrl2}}
+            <img src="{{damageImageUrl2}}" style="width: 300px; height: 200px;" />
+        {{/damageImageUrl2}}
+        {{#damageImageUrl3}}
+            <img src="{{damageImageUrl3}}" style="width: 300px; height: 200px;" />
+        {{/damageImageUrl3}}
+        {{#damageImageUrl4}}
+            <img src="{{damageImageUrl4}}" style="width: 300px; height: 200px;" />
+        {{/damageImageUrl4}}
+        {{#damageImageUrl5}}
+            <img src="{{damageImageUrl5}}" style="width: 300px; height: 200px;" />
+        {{/damageImageUrl5}}
+        {{#damageImageUrl6}}
+            <img src="{{damageImageUrl6}}" style="width: 300px; height: 200px;" />
+        {{/damageImageUrl6}}
+        {{#damageImageUrl7}}
+            <img src="{{damageImageUrl7}}" style="width: 300px; height: 200px;" />
+        {{/damageImageUrl7}}
+        {{#damageImageUrl8}}
+            <img src="{{damageImageUrl8}}" style="width: 300px; height: 200px;" />
+        {{/damageImageUrl8}}
+    </div>
+    <div>
+        <div style="text-align: left; font-size: 10;float: left;">Customer Signature</div>
+        <img src="{{signatureUrl}}" style="width: 300px; height: 200px;" />
+    </div>
+</body>
+
+</html>

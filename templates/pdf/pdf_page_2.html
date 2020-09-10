@@ -1,0 +1,335 @@
+<html>
+
+<head>
+    <style>
+        .header div {
+            font-size: 9;
+            padding: 0;
+        }
+        .userdetails {
+            font-size: 9;
+            margin-top: 2%;
+            width: 49%;
+            float: left;
+        }
+        .rentaldetails {
+            font-size: 9;
+            width: 49%;
+            float: right;
+        }
+        .rentaldetails .cell {
+            width: 50%;
+            padding-bottom: 1%;
+        }
+        .rentaldetails .cellRight {
+            float: right;
+        }
+        .rentaldetails .cellLeft {
+            float: left;
+        }
+        .coloredCell {
+            background-color: #ebe7e6;
+        }
+        .insurance {
+            font-size: 9;
+            margin-top: 2%;
+            width: 100%;
+        }
+        .priceDetails {
+            font-size: 9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div style="float: left; width: 60%">
+            <div style="float: left;width: 20%;height: 5%;">
+                <img style="width: 60%; height: 60%;display: block;" src="RC170wide.png" />
+            </div>
+            <div style="float: right">
+                <div style="font-weight: bold;">Right Cars Dubrovnik Airport</div>
+                <div>NOVA GRATIA d.o.o./Nova Rent a Car</div>
+                <div>Company Number 60253689</div>
+                <div>Vat Number 66126775778</div>
+                <div>Telephone number +38520773988</div>
+            </div>
+        </div>
+        <div style="float: right;width: 35%;">
+            <div style="text-align: right; font-weight: bold;">Invoice Number</div>
+            <div style="text-align: right">2020/14240</div>
+            <div style="text-align: right">Rental agreement number {{registratioNumber}}</div>
+            <div style="text-align: right">Service staff by No 745</div>
+        </div>
+    </div>
+    <div class="userdetails">
+        <div>HIRER DETAILS</div>
+        <div>
+            <div style="float: left;width: 50%;">
+                <div>Firstname</div>
+                <div class="coloredCell">{{firstname}}</div>
+            </div>
+            <div style="float: right;width: 50%;">
+                <div>Lastname</div>
+                <div class="coloredCell">{{lastname}}</div>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;width: 50%;">
+                <div>Date of Birth</div>
+                <div class="coloredCell">197-45-44</div>
+            </div>
+            <div style="float: right;width: 50%;">
+                <div>Place of Birth</div>
+                <div class="coloredCell">Somewhere</div>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;width: 33%;">
+                <div>Passport number</div>
+                <div class="coloredCell">{{passport}}</div>
+            </div>
+            <div style="float: right;width: 33%;">
+                <div>Issue Country</div>
+                <div class="coloredCell">{{passcountry}}</div>
+            </div>
+            <div style="float: right;width: 33%;">
+                <div>Expiry Date</div>
+                <div class="coloredCell">{{passyear}}/{{passmonth}}/{{passday}}</div>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;width: 33%;">
+                <div>Driving Licence Number</div>
+                <div class="coloredCell">44444444</div>
+            </div>
+            <div style="float: right;width: 33%;">
+                <div>Issue Country</div>
+                <div class="coloredCell">Somewhere</div>
+            </div>
+            <div style="float: right;width: 33%;">
+                <div>Expiry Date</div>
+                <div class="coloredCell">{{dryear}}/{{drmonth}}/{{drday}}</div>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;width: 50%;">
+                <div>Address</div>
+                <div class="coloredCell">{{add1}}</div>
+            </div>
+            <div style="float: right;width: 50%;">
+                <div>&nbsp;</div>
+                <div class="coloredCell">{{add2}}</div>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;width: 50%;">
+                <div>City</div>
+                <div class="coloredCell">{{city}}</div>
+            </div>
+            <div style="float: right;width: 50%;">
+                <div>Post code</div>
+                <div class="coloredCell">{{postcode}}</div>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;width: 100%;">
+                <div>Country</div>
+                <div class="coloredCell">{{country}}</div>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;width: 50%;">
+                <div>Email</div>
+                <div class="coloredCell">{{emailaddress}}</div>
+            </div>
+            <div style="float: right;width: 50%;">
+                <div>Telephone</div>
+                <div class="coloredCell">{{mobilecode}}{{mobilenumber}}</div>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;width: 33%;">
+                <div>Payment Type</div>
+                <div class="coloredCell">44444444</div>
+            </div>
+            <div style="float: right;width: 33%;">
+                <div>Card number</div>
+                <div class="coloredCell">Somewhere</div>
+            </div>
+            <div style="float: right;width: 33%;">
+                <div>Expiry</div>
+                <div class="coloredCell">Somewhere</div>
+            </div>
+        </div>
+    </div>
+    <div class="rentaldetails">
+        <div>RENTAL DETAILS</div>
+        <div>
+            <div class="cell cellLeft">AGENT</div>
+            <div class="cell cellRight">xxxxxx</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Supplier Code</div>
+            <div class="cell cellRight">xxxxx</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Supplier Confirmation</div>
+            <div class="cell cellRight">xxxxxxx</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Reservation Type</div>
+            <div class="cell cellRight">xxxxx</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Start Date</div>
+            <div class="cell cellRight">{{pickupTime}}</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Pickup Location</div>
+            <div class="cell cellRight">{{pickupLocation}}</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Pickup Tele</div>
+            <div class="cell cellRight">{{pickupLocationPhoneNumber}}</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Return Date</div>
+            <div class="cell cellRight">{{dropoffTime}}</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Return Location</div>
+            <div class="cell cellRight">{{dropOffLocation}}</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Return Tele</div>
+            <div class="cell cellRight">{{dropoffLocationPhoneNumber}}</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Vehicle Group</div>
+            <div class="cell cellRight">xxxxx</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Vehicle Make Model</div>
+            <div class="cell cellRight">xxxxx</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Vehicle Registration</div>
+            <div class="cell cellRight">xxxx</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Vehicle Vin No</div>
+            <div class="cell cellRight">xxxx</div>
+        </div>
+        <div>
+            <div class="cell cellLeft">Mileage Out</div>
+            <div class="cell cellRight">xxxxx</div>
+        </div>
+    </div>
+    <div class="insurance">
+        <div style="text-align: center">Insurance</div>
+        <div style="text-align: justify;">
+            | declare | have no convictions or motoring offences pending and during the last 5 years | have never been disqualified for driving or been convicted of any criminal act.
+            declare | have not been declined for motor insurance or had a motor policy cancelled or a renewal declined, and | have not been asked to pay an increased premium or ha
+            any special condtions imposed on any motor insurance policy. | declare | do not suffer from defective vision or hearing (not corrected by glasses or hearing aid), hea
+            disorder, diabetes, fits or any other physical or mental infirmity that could affect my driving. | declare that to the best of my knowledge and belief the particulars given in th
+            insurance proposal are true and no informtion has been withheld that might influence acceptance of the proposal which, with this declaration shall form the basis of th
+            contract of insurance.
+        </div>
+    </div>
+    <div>
+        <div style="text-align: left; font-size: 10;float: left;">Customer Signature</div>
+        <img src="{{signatureUrl}}" style="width: 200px; height: 100px;" />
+    </div>
+    <div class="priceDetails">
+        <div style="border-top: 1px solid rgba(0,0,0,0.3); border-bottom: 1px solid rgba(0,0,0,0.3);">
+            <div style="width: 25%;float: left;">DESCRIPTION</div>
+            <div style="width: 25%;float: left;">UNIT PRICE</div>
+            <div style="width: 25%;float: left;">QTY</div>
+            <div style="width: 25%;float: left;">TOTAL</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">Rental Cost</div>
+            <div style="width: 25%;float: left;">{{finalCost}} EUR</div>
+            <div style="width: 25%;float: left;">1</div>
+            <div style="width: 25%;float: left;">{{finalCost}}</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">Unlimited Mileage*</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">Airtport Surcharge*</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">TP Thef Protection Insurance*</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">TPL Third Party Liability Insurance*</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">CDW Collision Damage Waiver*</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">Mechanical Breakdown Cover*</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">ISLAND FERRY FEE</div>
+            <div style="width: 25%;float: left;">0 EUR</div>
+            <div style="width: 25%;float: left;">1</div>
+            <div style="width: 25%;float: left;">0 EUR</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;font-weight: bold;">Net Total</div>
+            <div style="width: 25%;float: left;font-weight: bold;">{{finalCost}} EUR</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;font-weight: bold;">Sales Tax 25.00%</div>
+            <div style="width: 25%;float: left;font-weight: bold;">{{ (finalCost / 100) * 25 }} EUR</div>
+        </div>
+        <div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;">&nbsp;</div>
+            <div style="width: 25%;float: left;font-weight: bold;">Total 25.00%</div>
+            <div style="width: 25%;float: left;font-weight: bold;">{{ ((finalCost / 100) * 25) + finalCost }} EUR</div>
+        </div>
+    </div>
+    <div class="insurance">
+        <div style="text-align: center">Insurance</div>
+        <div style="text-align: justify;">
+            I understand that if I return the vehicle late or not to the agreed return location I will incur additional charges.
+            I hereby acknowledge that during the period of this agreement I will be liable for any traffic offences and any excess charges or 
+            penalty charges by local traffic laws. I understand that any traffic violation fines, parking tickets or penalty charges will be 
+            subject to an administration charge of 50.00 EUR I authorise the lessor to obtain payment from the credit/debit card supplied for
+            the Total Charge as indicated and any other charges in accordance with the rates agreed in this document and any other sums due wich 
+            become due to the lessor.
+        </div>
+    </div>
+    <div>
+        <div style="text-align: left; font-size: 10;float: left;">Customer Signature</div>
+        <img src="{{signatureUrl}}" style="width: 200px; height: 100px;" />
+    </div>
+</body>
+
+</html>

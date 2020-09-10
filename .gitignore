@@ -1,0 +1,7 @@
+vendor/
+**/errors.log
+*.lock
+docs/*.png
+docs/*.jpg
+docs/*.jpeg
+error_log

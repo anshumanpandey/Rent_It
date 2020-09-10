@@ -1,0 +1,22 @@
+{
+    "name": "leo/php-mobile-app-cars",
+    "authors": [
+        {
+            "name": "Leonardo",
+            "email": "leo_9_t@hotmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.2",
+        "rakit/validation": "0.22.3",
+        "rmccue/requests": "^1.7",
+        "markwilson/xml-to-json": "^0.1.4",
+        "loilo/fuse": "^3.6",
+        "facebook/graph-sdk": "^5.7",
+        "spatie/query-string": "^1.0",
+        "abraham/twitteroauth": "1.0.1",
+        "mustache/mustache": "^2.13",
+        "mpdf/mpdf": "^8.0",
+        "paragonie/random_compat": "<9.99"
+    }
+}
